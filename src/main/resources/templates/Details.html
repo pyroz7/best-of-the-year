@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Dettagli della Canzone</h1>
+<ul>
+    <li>Titolo: <span th:text="${song.title}">Title</span></li>
+    <li>Artista: <span th:text="${song.author}">Author</span></li>
+</ul>
+
+<h3><a th:href="@{/song}">torna alla lista</a></h3>
+
+</body>
+</html>
